@@ -6,7 +6,7 @@ window.onload = function() {
 var tom="#fff";
 var myCanvas = document.getElementById("myCanvas");
 	 ctx = myCanvas.getContext("2d");
-    
+    //change
     // Fill Window Width and Height
     myCanvas.width = window.innerWidth;
 	myCanvas.height = window.innerHeight;
