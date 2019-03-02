@@ -1,0 +1,53 @@
+<head>
+<meta charset="utf-8" />
+<title>HTML5 Canvas Drawing Board</title>
+<link rel="stylesheet" type="text/css" href="wb3.css">
+<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+
+</head>
+<body>
+	<header>White Board</header>
+
+  <div  id="bob" >
+
+  	<button onclick="Pen()">Pencil</button>
+
+	<select name="size" id="Size" onchange="Change()">
+			<option value="8">Medium</option>
+			<option value="2">Thin</option>
+			<option value="18">Thick</option>
+			<option value="50">Extra Thick</option>
+	</select>
+
+	<select name="color" id="col" onchange="Color()">
+		    <option value="#000" onclick="Tom()">Black</option>
+		    <option value="rgb(255,0,0)">Red</option>
+			<option value="rgb(0,0,255)">Blue</option>
+			<option value="rgb(0,255,0)">Green</option>
+			<option value="rgb(255,105,180)">Pink</option>
+			<option value="rgb(255,116,0)">Orange</option>
+			<option value="rgb(255,255,0)">Yellow</option>
+			
+	</select>
+
+	<button id="Erase" onclick="fun()">Eraser</button>
+
+	<button id="new" onclick="New()">New</button>
+
+    <a id="download" download="image.png" style="">Save</a>
+
+  </div>
+
+
+	<canvas id="myCanvas">
+		Sorry, your browser does not support HTML5 canvas technology.
+	</canvas>
+	
+
+  <script type="text/javascript" src="wb2.js">
+  
+  </script>
+
+
+</body>
+</html>
