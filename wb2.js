@@ -6,7 +6,7 @@ window.onload = function() {
 var tom="#fff";
 var myCanvas = document.getElementById("myCanvas");
 	 ctx = myCanvas.getContext("2d");
-    //change
+    
     // Fill Window Width and Height
     myCanvas.width = window.innerWidth;
 	myCanvas.height = window.innerHeight;
@@ -88,11 +88,16 @@ var myCanvas = document.getElementById("myCanvas");
 		evt.preventDefault();
 	},false);
 };
+
+//x="image.png";
 function New(){
 		var myCanvas = document.getElementById("myCanvas");
-	var ct = myCanvas.getContext("2d");
-	ct.clearRect(0,0,myCanvas.width,myCanvas.height);
-
+	var ctx = myCanvas.getContext("2d");
+	x=document.getElementById("textt").value;
+	var image =new Image();
+	image.src=x;
+//	ctx.clearRect(0,0,myCanvas.width,myCanvas.height);
+    ctx.drawImage(image,0,0,myCanvas.width,myCanvas.height)
 	}
 	function fun() {
 		PenC="#fff";
